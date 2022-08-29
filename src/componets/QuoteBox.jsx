@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import { React, useState } from 'react';
 import phrase from '../phrase.json'
 import Button from './Button';
 
-
+const colors = ["#D65DB1", "#FFC75F", "#F9F871", "#0081CF", "#0089BA", "#FBEAFF" ]
 
 const QuoteBox = () => {
-    const colors = ["#845EC2", "#D65DB1", "#FFC75F", "#F9F871", "#0081CF"]
     const randomPhrase = Math.floor(Math.random () * phrase.length)
     const [paragraph, setParagraph] = useState(randomPhrase)
 
@@ -13,7 +12,7 @@ const QuoteBox = () => {
         setParagraph(randomPhrase)
     }
 
-    const bodyColors = colors[ Math.floor(Math.random() * 5)]
+    const bodyColors = colors[ Math.floor(Math.random() * 6)]
     document.body.style = `background: ${bodyColors}`
 
 
