@@ -9,6 +9,7 @@ const QuoteBox = () => {
     const [paragraph, setParagraph] = useState(randomPhrase)
 
     const testButton = () => {
+        const colors = ["#D65DB1", "#FFC75F", "#F9F871", "#0081CF", "#0089BA", "#FBEAFF" ]
         setParagraph(randomPhrase)
     }
 
